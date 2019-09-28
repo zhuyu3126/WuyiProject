@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:visibility="gone"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:theme="@style/ThemeToolbarDarkOverflow"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ToolbarPopupTheme" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/top_bg">
+
+            <ImageView
+                android:id="@+id/icon_toolbar_custom"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_more"
+                android:visibility="gone" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_nav"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/icon_toolbar_custom"
+                android:paddingRight="12dp"
+                android:paddingLeft="12dp"
+                app:tabGravity="fill"
+                app:tabMode="scrollable"
+                app:tabPaddingEnd="5dp"
+                app:tabPaddingStart="5dp"
+                app:tabIndicatorColor="@color/transparent"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextColor="@color/white"
+                app:tabTextAppearance="@style/TabLayoutTextStyle"
+                style="@style/TabLayout"
+                />
+        </RelativeLayout>
+        <include layout="@layout/newest_banner_and_video" />
+        <include layout="@layout/middle_view"/>
+        <FrameLayout
+            android:id="@+id/homeContent_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

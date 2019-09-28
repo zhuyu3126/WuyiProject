@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--ToolBar区域背景颜色-->
+        <item name="colorPrimary">@color/black</item>
+        <!--状态栏区域背景颜色-->
+        <item name="colorPrimaryDark">@color/black</item>
+        <!--控制各个控件被选中时的颜色-->
+        <item name="colorAccent">@color/white</item>
+
+        <!--页面背景色-->
+        <item name="android:windowBackground">@color/bg_color</item>
+        <!--api 21 可用 底部导航栏颜色-->
+        <item name="android:navigationBarColor">@color/bg_color</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <!--api 21 可用 各个控制控件的默认颜色-->
+        <!--<item name="android:colorControlNormal">@color/white</item>-->
+
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:windowActionBar">false</item>
+
+    </style>
+
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+    <style name="ThemeToolbarDarkOverflow" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textColorPrimary">@color/abc_primary_text_material_light</item>
+        <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_light</item>
+        <item name="android:textColorSecondary">@color/abc_secondary_text_material_light</item>
+    </style>
+    <!--修改toolbar弹出菜单的位置-->
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">true</item>  <!--把该属性改为false即可使menu位置位于toolbar之下-->
+    </style>
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="navigationIcon">@drawable/abc_ic_ab_back_material</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item> <!--新增一个item，用于控制menu-->
+    </style>
+
+    <style name="TabLayoutTextStyle" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="TabLayout" parent="android:Widget">
+        <item name="tabBackground">@drawable/tab_background</item>
+        <item name="tabIndicatorColor">@color/transparent</item>
+        <item name="tabIndicatorHeight">0dp</item>
+    </style>
+
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/layer_list</item>
+        <item name="android:minHeight">24dip</item>
+        <item name="android:maxHeight">24dip</item>
+    </style>
+</resources>

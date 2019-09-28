@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color">
+
+    <LinearLayout
+        android:id="@+id/search_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/top_bg"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="优质推荐"
+                android:textColor="@color/orgeenge" />
+        </LinearLayout>
+
+
+        <com.manage.tn.wuyi_sport.widget.edittext.AutoCheckEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/search_bg"
+            android:gravity="right|center"
+            android:hint="搜索更多"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/ic_search" />
+
+    </LinearLayout>
+
+    <com.androidkun.PullToRefreshRecyclerView
+        android:id="@+id/recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/recycle_bg"/>
+
+</LinearLayout>

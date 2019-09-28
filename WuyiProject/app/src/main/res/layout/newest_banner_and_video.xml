@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color">
+
+    <FrameLayout
+        android:id="@+id/bannerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <com.manage.tn.wuyi_sport.widget.banner.BannerWrapperView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="visible"
+            app:bannerClipChildren="false"
+            app:indicatorIconNormal="@drawable/banner_indicator"
+            app:indicatorIconSelected="@drawable/banner_indicator_red_sel"
+            app:playAuto="true"
+            app:playLoop="true"
+            app:viewPageMargin="8dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/radioType"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom|center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/videobtn"
+                android:layout_width="0dip"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/checkbox_selector"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:text="视频"
+                android:textColor="@drawable/textcolor_selector"
+                android:textSize="12dp" />
+
+            <RadioButton
+                android:id="@+id/imagbtn"
+                android:layout_width="0dip"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/checkbox_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="图片"
+                android:textColor="@drawable/textcolor_selector"
+                android:textSize="12dp" />
+
+        </RadioGroup>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/banner_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/bannerFragment"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/banner_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/guanZhuBtn"
+            android:layout_width="60dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/guanzhu_select"
+            android:text="关注" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shardLinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner_text_view"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/favorNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shard_border"
+            android:drawableLeft="@drawable/ic_shard_dz"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="22255"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/wx_shard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shard_border"
+            android:drawableLeft="@drawable/ic_shard_wx"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="分享微信"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/pyq_shard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shard_border"
+            android:drawableLeft="@drawable/ic_shard_pyq"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="分享朋友圈"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/operatorLinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner_text_view"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/favorCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shard_border"
+            android:drawableLeft="@drawable/ic_dz2"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="22255"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/gz_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shard_border"
+            android:drawableLeft="@drawable/ic_shard_dz"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="关注我们"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/send_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shard_border_white"
+            android:drawableLeft="@drawable/ic_lx"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="发布视频"
+            android:textColor="@color/orgeenge"
+            android:textSize="10dp" />
+    </LinearLayout>
+</RelativeLayout>

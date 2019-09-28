@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.lxj:xpermission-1.0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/xpermission-1.0.1.aar/d91864119d1be962614cf534090c0f6f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/xpermission-1.0.1.aar/d91864119d1be962614cf534090c0f6f/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.lxj/xpermission/1.0.1/985ae83db3318e9dedfe65659c050356034f2e10/xpermission-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

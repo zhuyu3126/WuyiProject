@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/type_radio2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/dy_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/type_checkbox_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="队员"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/tb_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/type_checkbox_selector"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="特保"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/jl_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/type_checkbox_selector"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="教练"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/grzl_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/guanzhu_select"
+            android:button="@null"
+            android:checked="false"
+            android:drawableLeft="@drawable/ic_upload"
+            android:gravity="center"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="个人资料"
+            android:textColor="@color/white" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/type_radio"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/zybj_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/type_checkbox_selector"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="自由搏击"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/tqd_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/type_checkbox_selector"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="跆拳道"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/qj_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/type_checkbox_selector"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="拳击"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/tj_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/type_checkbox_selector"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="太极"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/mma_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/type_checkbox_selector"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="MMA"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/srcoll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <HorizontalScrollView
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:id="@+id/scroll_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/zybj_tabsc"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/type_checkbox_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="自由搏击"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/tqd_tabsc"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/type_checkbox_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="跆拳道"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/qj_tabsc"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/type_checkbox_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="拳击"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/tj_tabsc"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/type_checkbox_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="太极"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/mma_tabsc"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/type_checkbox_selector"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="MMA"
+                        android:textColor="@color/white" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/ssfb_tabsc"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/guanzhu_select"
+                android:button="@null"
+                android:checked="false"
+                android:drawableLeft="@drawable/ic_upload"
+                android:gravity="center_vertical"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="赛事发布"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

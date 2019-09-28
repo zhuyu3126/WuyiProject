@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    android:background="@drawable/glider_border">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/transparent">
+
+        <TextView
+            android:id="@+id/className"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="太极班"
+            android:textColor="@color/orgeenge"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/item_vc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="3dp"
+            android:singleLine="true"
+            android:text="更多..."
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/picture_head_border"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/picturebottom_border">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1.8"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="全年"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="￥1000"
+            android:textColor="@color/orgeenge"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

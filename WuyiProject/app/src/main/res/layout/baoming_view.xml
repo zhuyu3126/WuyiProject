@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color">
+
+    <LinearLayout
+        android:id="@+id/shardLinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/banner_text_view"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/class_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shard_border"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="找班级"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/jiaolian_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shard_border"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="找教练"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/jianjie_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shard_border"
+            android:drawableLeft="@drawable/ic_sz"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:text="看简介"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <include layout="@layout/search_recycle"/>
+
+
+</LinearLayout>
